@@ -1,0 +1,231 @@
+@import url("https://rsms.me/inter/inter.css");
+
+html {
+  font-family: "Inter", sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rebeccapurple;
+  color: #071723;
+}
+
+/* Checkbox styles */
+.checkbox-item {
+  display: flex;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  -moz-appearance: none;
+  background-color: #2f3676;
+  height: 24px;
+  width: 24px;
+  border-radius: 4px;
+}
+
+input[type="checkbox"] + label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 8px;
+  line-height: 24px;
+}
+
+input[type="checkbox"]:hover,
+input[type="checkbox"]:focus {
+  background-color: #191847;
+}
+
+input[type="checkbox"]:disabled {
+  background-color: #c5cfd6;
+  cursor: not-allowed;
+}
+
+input[type="checkbox"]:checked {
+  background: #2f3676
+    url(http://www.growthmachine.com.br/wp-content/uploads/white-line-check.png)
+    center no-repeat;
+  background-size: 60%;
+}
+
+input[type="checkbox"].error {
+  background-color: #f59393;
+}
+
+input[type="checkbox"].error + label {
+  color: #f59393;
+}
+
+.box {
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  box-shadow: 10px 22px 34px 0 rgba(0, 0, 0, 0.5);
+  margin: 20px auto;
+  overflow: hidden;
+  width: 550px;
+}
+
+h2.label {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21px;
+  margin-bottom: 15px;
+}
+
+.header {
+  background: url(images/header.png) center right no-repeat;
+  background-size: cover;
+  height: 187px;
+  padding: 23px 36px;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.header .title {
+  color: #fff;
+  font-size: 23px;
+  line-height: 28px;
+  font-weight: 300;
+}
+
+.header .title strong {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.46;
+}
+
+.form textarea {
+  background: #dde3e9;
+  border: 1px solid #2f3676;
+  border-radius: 4px;
+  color: #071723;
+  font-family: inherit;
+  height: 140px;
+  padding: 16px;
+  resize: none;
+  width: 100%;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.fieldset {
+  border: none;
+  padding: 0 32px;
+  margin-bottom: 32px;
+}
+
+fieldset.checkboxes-container {
+  display: flex;
+}
+
+fieldset.checkboxes-container input {
+  margin-right: 9px;
+}
+
+.counter {
+  display: flex;
+}
+
+.counter button svg {
+  fill: #2f3676;
+}
+
+.counter input {
+  background: #dde3e9;
+  border: 1px solid #2f3676;
+  border-radius: 4px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+  margin: 0 8px;
+  width: 60px;
+  padding: 9px 11px;
+  text-align: center;
+}
+
+.counter input.error {
+  background: #f59393;
+  border: 1px solid #f33232;
+}
+
+.counter button {
+  border: none;
+  height: 42px;
+  width: 42px;
+}
+
+.counter button:hover > svg,
+.counter button:focus > svg {
+  fill: #191847;
+}
+
+.counter button:disabled > svg {
+  fill: #c5cfd6;
+  cursor: not-allowed;
+}
+
+/* Removes input number styles */
+.no-spin::-webkit-inner-spin-button,
+.no-spin::-webkit-outer-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0 !important;
+  -moz-appearance: textfield !important;
+}
+
+.footer {
+  padding: 32px;
+  background: #dde3e9;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.footer button {
+  border: 2px solid #2f3676;
+  background: #2f3676;
+  border-radius: 7px;
+  color: #fff;
+  padding: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 8px 32px;
+}
+
+.footer button:focus,
+.footer button:hover {
+  border: 2px solid #2f3676;
+  background: #191847;
+}
+
+.footer button:disabled {
+  color: #555555;
+  background: #c5cfd6;
+  border: 2px solid #555555;
+  cursor: not-allowed;
+}
+
+.footer span {
+  flex: 1;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 600;
+  color: #00c57c;
+}
+
+.footer span.error {
+  color: #f59393;
+}
